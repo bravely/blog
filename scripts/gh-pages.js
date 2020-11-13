@@ -1,16 +1,20 @@
 var ghpages = require('gh-pages')
 
 ghpages.publish(
-  '__sapper__/export/blog',
+  '__sapper__/export/bravely.github.io',
   {
-    branch: 'gh-pages',
-    repo: 'https://github.com/bravely/blog.git',
+    branch: 'main',
+    repo: 'git@github.com:bravely/bravely.github.io.git',
     user: {
       name: 'Jake Demarest-Mays',
-      email: 'Your Email address'
+      email: 'jake@demarest-mays.com'
     }
   },
-  () => {
-    console.log('Deploy Complete!')
+  (err) => {
+    if (err) {
+      console.error(err)
+    } else {
+      console.log('Deploy Complete!')
+    }
   }
 )
