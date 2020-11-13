@@ -8,7 +8,7 @@
     "export": "sapper export --basepath bravely.github.io --legacy",
     "start": "node __sapper__/build",
     "validate": "svelte-check --ignore src/node_modules/@sapper",
-    "deploy": "npm run export && node ./scripts/gh-pages.js"
+    "deploy": "node ./scripts/gh-pages.js"
   },
   "dependencies": {
     "compression": "^1.7.1",
