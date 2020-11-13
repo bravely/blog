@@ -8,11 +8,11 @@ if (!args.includes('--built')) {
 }
 
 // This needs to run *after* export.
-fs.writeFileSync(`${__dirname}/../__sapper__/export/jake.demarest-mays.com/CNAME`, 'jake.demarest-mays.com')
+fs.writeFileSync(`${__dirname}/../__sapper__/export/CNAME`, 'jake.demarest-mays.com')
 console.log('Copied over CName')
 
 ghpages.publish(
-  '__sapper__/export/jake.demarest-mays.com',
+  '__sapper__/export',
   {
     repo: 'git@github.com:bravely/bravely.github.io.git',
     branch: 'gh-pages',
