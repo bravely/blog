@@ -1,6 +1,6 @@
 {
-  "name": "blog",
-  "description": "TODO",
+  "name": "bravely.github.io",
+  "description": "my blog",
   "version": "0.0.1",
   "scripts": {
     "dev": "sapper dev",
