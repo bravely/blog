@@ -3,7 +3,7 @@ var ghpages = require('gh-pages')
 ghpages.publish(
   '__sapper__/export/bravely.github.io',
   {
-    branch: 'main',
+    branch: 'gh-pages',
     repo: 'git@github.com:bravely/bravely.github.io.git',
     user: {
       name: 'Jake Demarest-Mays',
