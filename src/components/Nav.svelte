@@ -1,5 +1,5 @@
 <script lang="ts">
-	export let segment: string;
+	export let segment;
 </script>
 
 <style>
@@ -7,11 +7,19 @@
 		border-bottom: 1px solid rgba(255,62,0,0.1);
 		font-weight: 300;
 		padding: 0 1em;
+		display: flex;
+		justify-content: space-between;
 	}
 
 	ul {
 		margin: 0;
 		padding: 0;
+		display: inline-block;
+	}
+
+	h1 {
+		padding-top: 0.25em;
+		display: inline-block;
 	}
 
 	/* clearfix */
@@ -57,4 +65,5 @@
 		     the blog data when we hover over the link or tap it on a touchscreen -->
 		<!-- <li><a rel=prefetch aria-current="{segment === 'blog' ? 'page' : undefined}" href="blog">blog</a></li> -->
 	</ul>
+	<h1>Jake Demarest-Mays</h1>
 </nav>
